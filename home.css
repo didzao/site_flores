@@ -1,0 +1,39 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --titulo: #FF90C8;
+}
+
+.banner img {
+  display: cover;
+  width: 100%;
+}
+
+.titulo{
+  color: var(--titulo);
+  text-align: center;
+  font-weight: lighter;
+}
+
+.comeco p strong {
+  color: #4492E6;
+}
+
+.lista {
+  padding: 20px;
+}
+.lista ul {
+  display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+.lista ul li {
+  color: #A593F1;
+}
+
+.lista .img-lista {
+  width: 50%;
+}

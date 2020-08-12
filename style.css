@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #FFF4FC;
+  background-image: url("topo.png");
+  background-repeat:no-repeat;
+  background-position: right top;
+  background-size: 20%;
+  padding: 20px 0;
+}
+
+/*CABEÇALHO*/
+.caixa {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  
+}
+
+nav {
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+nav li a {
+  text-transform: uppercase;
+  color: #C7A0B9;
+  font-weight: bolder;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #D989B4;
+  text-decoration: underline;
+}
+
+
+/*HOME*/
+
+.banner {
+  width: 100%;
+}
+
+.principal {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 3em 0;
+  background-color: #FEFEFE;
+}
+.titulo {
+  text-align: center;
+  font-size: 2em;
+  margin: 1em 0 1em;
+  clear: left;
+  color: #D989B4;
+}
+.principal p {
+  margin: 0 0 1em;
+}
+.principal strong {
+  font-weight: bold;
+  color: #C7A0B9;
+}
+.principal em {
+  font-style: italic;
+}
+.img-titulo {
+  width: 150px;
+  border-radius: 50%;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.secundario {
+  padding: 2em 0;
+  background: linear-gradient(#FEFEFE, #FFEAF7, #FFF4FC);
+}
+.lista {
+  width: 850px;
+  margin: 0 auto;
+}
+.lista-flores {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+.lista-flores li{
+  list-style-type: none;
+}
+.itens {
+  line-height: 1.5;
+}
+.itens:before {
+  content: "💐";
+  margin-right: 10px;
+}
+.img-lista {
+  width: 55%;
+}
+
+.mapa {
+  padding: 3em 0;
+  background-color: #FFF4FC;
+}
+.mapa-conteudo{
+  width: 1000px;
+  margin: 0 auto;
+}
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+/*PRODUTOS*/
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #FFEAF7;
+	border-radius: 10px;
+}
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+.produtos .italico {
+  font-style: italic;
+  color: #D989B4;
+}
+
+.produtos li:hover {
+	border-color: #D989B4;
+}
+.produtos li:hover h2 {
+	font-size: 34px;
+  color: #D989B4;
+  
+}
+.produtos li img {
+  width: 220px;
+  margin: 10px 0 10px 0;
+  opacity: 0.4;
+}
+
+.produtos li img:hover {
+  opacity: 1;
+}
+
+/*CONTATO*/
+.formulario {
+  width: 1000px;
+	margin: 0 auto;
+}
+form {
+  margin: 40px 0;
+}
+form label, form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+.input-padrao {
+  display: block;
+  width: 50%;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  border: 0;
+  border-bottom: 2px solid #D8BFD8;
+}
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  background-color: #D8BFD8; 
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  transition: 2s all;
+  cursor: pointer;
+}
+.enviar:hover {
+  background-color: #D989B4;
+  transform: scale(1.1);
+}
+
+table {
+  margin: 20px 0 40px;
+}
+thead {
+  background-color: #D8BFD8;
+  color: white;
+  font-weight: bold;
+}
+
+td, th {
+  border: 1px solid #D989B4;
+  padding: 8px 15px;
+}
+
+/*RODAPÉ*/
+footer {
+  background-image: url("bot.png");
+  background-repeat:no-repeat;
+  background-size: 20%;
+  background-position: left bottom;
+  background-color: #FFF4FC;
+  text-align: center;
+  padding: 40px 0;
+}
+.rodape {
+  width: 100px;
+}
+.copyright {
+  color: #C7A0B9; 
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/*RESPONSIVO*/
+@media screen and (max-width: 400px) {
+  .caixa, .principal, .lista, .mapa-conteudo, .produtos, .formulario {
+    width: auto;
+  }
+
+  nav {
+    position: static;
+  }
+  nav li a {
+    font-size: 18px;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  .img-lista {
+    width: 100%;
+    margin-top: 1em;
+  }
+  .mapa {
+    padding: 1em 0;
+    
+   }
+
+  .produtos li {
+    display: inline;
+  }
+  .produtos li img {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    opacity: 1;
+  }
+  .produtos li {
+    border: none;
+  }
+
+  .formulario {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .enviar {
+    width: 100%;
+  }
+  table {
+    width: 100%;
+  }
+  td, th {
+  text-align: center;
+  }
+  .input-padrao {
+    width: 85%;
+    
+  }
+}
+

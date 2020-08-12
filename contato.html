@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Contato</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>
+		<div class="caixa">
+			<h1><img src="logo.png" alt="logo da página"></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="formulario">
+      <form action="">
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" class="input-padrao" placeholder="Meg Ryan" required>
+        
+        <label for="e-mail">E-mail:</label>
+        <input id="e-mail" type="email" class="input-padrao" placeholder="seuemail@email.com" required>
+
+        <label for="telefone">Telefone:</label>
+        <input id="telefone" type="number" class="input-padrao" placeholder="(XX) XXXX-XXXX" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="Mensagem" cols="30" rows="10" class="input-padrao" required placeholder="Digite aqui a sua mensagem"></textarea>
+
+        <fieldset>
+          <legend>Como prefere nosso contato?</legend>
+          <label for="radio-email"> <input id="radio-email" type="radio" name="contato" value="e-mail" required> E-mail </label> 
+          <label for="radio-telefone"> <input id="radio-telefone" type="radio" name="contato" value="telefone"required> Telefone  </label> 
+          <label for="radio-wpp"> <input id="radio-wpp" type="radio" name="contato" value="wpp" required> Whatsapp  </label> 
+        </fieldset>
+
+        <fieldset>
+          <legend>Qual horário deseja ser atendido?</legend>
+          <select name="" id="">
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+          </select>
+        </fieldset>
+
+          <label for="novidades"> <input type="checkbox" id="novidades" class="checkbox" checked="checked"> Gostaria de receber nossas novidades por e-mail?  </label>
+          
+          <input class="enviar" type="submit" value="Enviar mensagem">
+      </form>
+      <table>
+      <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horários</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>08h - 20h</td>
+          </tr>
+          <tr>
+            <td>Quarta</td>
+            <td>08h - 20h</td>
+          </tr>
+          <tr>
+            <td>Sexta</td>
+            <td>08h - 20h</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+<footer>
+  <img class="rodape" src="logo.png" alt="logo da página" >
+  <p class="copyright">&copy; Copyright didzao&trade; - 2020</p>
+</footer>
+	<script src="script.js"></script>
+</body>
+
+</html>
